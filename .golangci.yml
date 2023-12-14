@@ -1,0 +1,37 @@
+linters-settings:
+  govet:
+    check-shadowing: true
+  gocyclo:
+    min-complexity: 42
+  cyclop:
+    max-complexity: 42
+  maligned:
+    suggest-new: true
+  dupl:
+    threshold: 42
+  revive:
+    rules:
+    - name: var-naming
+      severity: warning
+      disabled: true
+linters:
+  enable-all: true
+  disable:
+    - exhaustive
+    - exhaustivestruct
+    - gochecknoglobals
+    - goerr113
+    - lll
+    - wsl
+    - paralleltest
+    - testpackage
+    - exhaustruct
+    - nosnakecase #deprecated
+    - golint #deprecated
+    - varcheck #deprecated
+    - ifshort #deprecated
+    - structcheck #deprecated
+    - maligned #deprecated
+    - scopelint #deprecated
+    - interfacer #deprecated
+    - deadcode #deprecated

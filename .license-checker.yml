@@ -1,0 +1,10 @@
+allowed:
+    type:
+        - Apache-2.0
+        - MIT
+        - BSD-2-Clause
+        - BSD-3-Clause
+        - ISC
+blocked:
+    type:
+        - MPL-2.0 # this is not compatible with other allowed licenses
